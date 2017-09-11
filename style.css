@@ -1,0 +1,100 @@
+.hs-Wrapper {
+	position: relative;
+	box-sizing: border-box;
+	display: block;
+	overflow: hidden;
+}
+
+.hs-ListWrap {
+	overflow-x: hidden;
+	overflow-y: hidden;
+	white-space: nowrap;
+	position: relative;
+	text-align: right; /* or left */
+}
+
+.hs-List {
+	-webkit-transition: -webkit-transform .2s ease-in-out;
+	transition: -webkit-transform .2s ease-in-out;
+	transition: transform .2s ease-in-out;
+	transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+	position: relative;
+	display: inline-block;
+	padding: 0;
+}
+
+.hs-List-transition-off {
+	-webkit-transition: none;
+	transition: none;
+}
+
+.hs-Item {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+}
+
+.hs-Advancer {
+	/* Reset */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: transparent;
+	padding: 0;
+	border: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	opacity: 0.5;
+	-webkit-transition: opacity .3s;
+	transition: opacity .3s;
+	display: none;
+}
+
+.hs-Advancer:focus {
+	outline: 0;
+}
+
+.hs-Advancer:hover {
+	cursor: pointer;
+}
+
+.hs-Advancer_Left {
+	left: 0;
+}
+
+[data-overflowing="both"] ~ .hs-Advancer_Left, [data-overflowing="left"] ~ .hs-Advancer_Left {
+	opacity: 1;
+}
+
+.hs-Advancer_Right {
+	right: 0;
+}
+
+[data-overflowing="both"] ~ .hs-Advancer_Right, [data-overflowing="right"] ~ .hs-Advancer_Right {
+	opacity: 1;
+}
+
+.pn-Advancer_Icon {
+	width: 20px;
+	height: 30px;
+	fill: #bbb;
+}
+
+/* list item style example */
+.hs-Item a {
+	border: none;
+	display: inline-block;
+	outline: 0;
+	padding: 8px 16px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: inherit;
+	background-color: inherit;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+	color: #fff;
+	background-color: #4CAF50;
+}
