@@ -1,9 +1,12 @@
 # HorizontalScroller
 
-  HorizontalScroller - A quickly built plugin that scrolls lists horizontaly with left/right advancer buttons, needs more work probably
+  HorizontalScroller - A quickly built plugin that scrolls lists horizontaly with left/right advancer buttons, could not get any light plugin to work when the list is aligned on the right side of the screen so i made this, needs more work probably.
 
-* Vanilla Javascript
+* plane Javascript, no dependencies
 * Easy to use
+
+![](example.gif)
+
 
 ## Usage
 
