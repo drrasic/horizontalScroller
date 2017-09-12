@@ -37,8 +37,8 @@ var HorizontalScroller = function () {
       listTravelling: false,
       listTravelDirection: "",
       listTravelDistance: 150,
-      paddingWithoutAdvancers: 30,
-      paddingWithAdvancers: 10
+      paddingWithoutAdvancers: 10,
+      paddingWithAdvancers: 30
     }
 
     this.SETTINGS = utils.extend(DEFAULTS, SETTINGS);
@@ -152,13 +152,13 @@ var HorizontalScroller = function () {
     if(utils.determineOverflow(this$1.List, this$1.listWrap) === 'none') {
       this.hsAdvancerLeft.style.display = "none";
       this.hsAdvancerRight.style.display = "none";
-      this.wrapper.style.paddingLeft = this$1.SETTINGS.paddingWithAdvancers + 'px';
-      this.wrapper.style.paddingRight = this$1.SETTINGS.paddingWithAdvancers + 'px';
+      this.wrapper.style.paddingLeft = this$1.SETTINGS.paddingWithoutAdvancers + 'px';
+      this.wrapper.style.paddingRight = this$1.SETTINGS.paddingWithoutAdvancers + 'px';
     } else {
       this.hsAdvancerLeft.style.display = "block";
       this.hsAdvancerRight.style.display = "block";
-      this.wrapper.style.paddingLeft = this$1.SETTINGS.paddingWithoutAdvancers + 'px';
-      this.wrapper.style.paddingRight = this$1.SETTINGS.paddingWithoutAdvancers + 'px';
+      this.wrapper.style.paddingLeft = this$1.SETTINGS.paddingWithAdvancers + 'px';
+      this.wrapper.style.paddingRight = this$1.SETTINGS.paddingWithAdvancers + 'px';
     }
   };
 
