@@ -28,10 +28,10 @@ Setup HTML with classes
             </ul>
         </nav>
         <button class="hs-Advancer hs-Advancer_Left" type="button">
-            <svg class="pn-Advancer_Icon" viewbox="0 0 100 100"><path class="arrow" d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z" /></svg>
+            <svg class="hs-Advancer_Icon" viewbox="0 0 100 100"><path class="arrow" d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z" /></svg>
         </button>
         <button class="hs-Advancer hs-Advancer_Right" type="button">
-            <svg class="pn-Advancer_Icon" viewbox="0 0 100 100"><path class="arrow" d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z" transform="translate(85,100) rotate(180)" /></svg>
+            <svg class="hs-Advancer_Icon" viewbox="0 0 100 100"><path class="arrow" d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z" transform="translate(85,100) rotate(180)" /></svg>
         </button>
     </div>
 ```
